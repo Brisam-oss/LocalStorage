@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkinCare "Chobichis"</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/producto.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="menu container">
+            <a href="#" class="logo"><img src="/src/assets/icon/logo.png" alt="" class="logo-img"></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="/src/assets/icon/instagam.png" class=" menu-icon" alt="Icno">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="altaProductos.html">Alta Productos</a></li>
+                    <li><a href="sobreNosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contactanos.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <section class="Nosotros">
+        <div class="Nosotros-txt container">
+            <h2>Naturaleza</h2>
+            <p> en cada gota <br> <span>Mimate cada día</span></p>
+        </div>
+
+    </section>
+    <div class="productos-container">
+        <div class="producto">
+            <img src="../assets/image/Tonico.png" alt="Medicube Age R Booster Ex">
+            <div class="product-txt" onclick="verProducto('Medicube Age R Booster Ex')">
+                <h4>Tónico Facial Madagascar Centella</h4>
+                <p>Tea-Trica Purifying Toner </p>
+                <span class="precio">$329.88 </span>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="../assets/image/SueroFacial.png" alt="Medicube Age R Booster Ex">
+            <div class="product-txt" onclick="verProducto('Medicube Age R Booster Ex')">
+                <h4> Ampolla Facial Madagascar Centella</h4>
+                <p>Hyalu-Cica First Ampoule </p>
+                <span class="precio">$405.64 </span>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="../assets/image/TonicoAntiAcne.png" alt="Medicube Age R Booster Ex">
+            <div class="product-txt" onclick="verProducto('Medicube Age R Booster Ex')">
+                <h4>Centella Asiatica Calmante</h4>
+                <p>Tónico Hidratación Control de Aceite Anti-Acné </p>
+                <span class="precio">$985.26 </span>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="../assets/image/LimpiadorFacial.png" alt="Medicube Age R Booster Ex">
+            <div class="product-txt" onclick="verProducto('Medicube Age R Booster Ex')">
+                <h4>Madagascar</h4>
+                <p>Calidad premium </p>
+                <span class="precio">$596.86 </span>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="../assets/image/AceiteMixsoon.png" alt="Medicube Age R Booster Ex">
+            <div class="product-txt" onclick="verProducto('Medicube Age R Booster Ex')">
+                <h4>Mixsoon - Esencia Essence</h4>
+                <p>Aporta hidratación profunda a la piel áspera y seca con 100 % betaglucano. </p>
+                <span class="precio">$596.86 </span>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="../assets/image/SerumCentella.png" alt="Medicube Age R Booster Ex">
+            <div class="product-txt" onclick="verProducto('Medicube Age R Booster Ex')">
+                <h4>Centella Asiatica Suero facial calmante reparador</h4>
+                <p>Adecuado para todo tipo de piel </p>
+                <span class="precio">$596.86 </span>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="../assets/image/Creams.png" alt="Medicube Age R Booster Ex">
+            <div class="product-txt" onclick="verProducto('Medicube Age R Booster Ex')">
+                <h4> Limpiador Facial 1025 Dokdo Cleanser</h4>
+                <p>Crema Facial 1025 Dokdo Cream </p>
+                <span class="precio">$1096.86 </span>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="../assets/image/RodilloCuarzo.png" alt="Medicube Age R Booster Ex">
+            <div class="product-txt" onclick="verProducto('Medicube Age R Booster Ex')">
+                <h4>Resin Face Massage Roller / Gua Sha Scraper / Set</h4>
+                <p>Rodillo de Cuarzo </p>
+                <span class="precio">$596.86 </span>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="../assets/image/SetCentella.png" alt="Medicube Age R Booster Ex">
+            <div class="product-txt" onclick="verProducto('Medicube Age R Booster Ex')">
+                <h4>Set Bioaqua Kit Control De Acne Centella Asiatica</h4>
+                <p>Producto hipoalergénico, libre de alchol </p>
+                <span class="precio">$796.86 </span>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="../assets/image/SetCompleto2.png" alt="Medicube Age R Booster Ex">
+            <div class="product-txt" onclick="verProducto('Medicube Age R Booster Ex')">
+                <h4>Set 5pz Kit Facial Camellias Bioaqua Antioxidanter</h4>
+                <p>Libre de parabenos </p>
+                <span class="precio">$696.86 </span>
+            </div>
+        </div>
+
+        <div class="producto" onmouseover="mostrarInformacion(this)" onmouseout="ocultarInformacion(this)">
+            <img src="../assets/image/SueroPielGrasa.png" alt="">
+            <div class="product-txt">
+                <h4>Centella Tea-Trica Relief Ampoule</h4>
+                <p>Suero Antiacné </p>
+                <span class="precio">$460.00 </span>
+            </div>
+        </div>
+
+        <div class="producto" onmouseover="mostrarInformacion(this)" onmouseout="ocultarInformacion(this)">
+            <img src="../assets/image/Mascarilla3.png" alt="">
+            <div class="product-txt">
+                <h4>Mascarilla de Arcilla </h4>
+                <p>Centella Poremizing Quick Clay Stick Mask </p>
+                <span class="precio">$304.00 </span>
+            </div>
+        </div>
+
+        <div class="producto" onmouseover="mostrarInformacion(this)" onmouseout="ocultarInformacion(this)">
+            <img src="../assets/image/MixsoonCream.png" alt="">
+            <div class="product-txt">
+                <h4>Crema Hidratante Bean Cream
+                </h4>
+                <p>Nutre la piel y mantiene los niveles de humedad y grasa de la piel </p>
+                <span class="precio">$985.26 </span>
+            </div>
+        </div>
+
+        <div class="producto" onmouseover="mostrarInformacion(this)" onmouseout="ocultarInformacion(this)">
+            <img src="../assets/image/Mascarilla Centella.png" alt="">
+            <div class="product-txt">
+                <h4>Mascarilla en Ampolla Madagascar</h4>
+                <p>Centella Watergel Sheet Ampoule Mask </p>
+                <span class="precio">$596.86 </span>
+            </div>
+        </div>
+    </div>
+
+    <section class="Nosotros2">
+    </section>
+
+    <div class="productos-container">
+        <div class="producto">
+            <img src="../assets/image/comboAzul.png" alt="Medicube Age R Booster Ex">
+            <div class="product-txt" onclick="verProducto('Medicube Age R Booster Ex')">
+                <h4>Kiit de Limpieza con protector solar</h4>
+                <p>Con Ácido hialurónico y savia de abedul </p>
+                <span class="precio">$589.88 </span>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="../assets/image/ComboCream.png" alt="Medicube Age R Booster Ex">
+            <div class="product-txt" onclick="verProducto('Medicube Age R Booster Ex')">
+                <h4>Madagascar Centella Doble Limpieza Set</h4>
+                <p>Combate eficazmente las impurezas y elimina el exceso de grasa </p>
+                <span class="precio">$300.64 </span>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="../assets/image/ComboMix.png" alt="Medicube Age R Booster Ex">
+            <div class="product-txt" onclick="verProducto('Medicube Age R Booster Ex')">
+                <h4>Skin1004 Madagascar Centella Travel Kit Full Size 5 Pzs</h4>
+                <p>Para todo tipo de piel, libre de parabenos</p>
+                <span class="precio">$1991.17 </span>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="../assets/image/ComboSueros.png" alt="Medicube Age R Booster Ex">
+            <div class="product-txt" onclick="verProducto('Medicube Age R Booster Ex')">
+                <h4>Kit de ampollas Skin1004 de centella de Madagascar</h4>
+                <p>Incluye 4 sueros,cada uno para diferentes usos </p>
+                <span class="precio">$596.86 </span>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="../assets/image/ComboTonicos.png" alt="Medicube Age R Booster Ex">
+            <div class="product-txt" onclick="verProducto('Medicube Age R Booster Ex')">
+                <h4>KIT DOKDO Hidratación. Limpiador + Tónico + Crema + Bloqueador Solar</h4>
+                <p>Contiene agua de profundidad marina de Dokdo y tres tipos de ácido hialurónico para mantener la piel
+                    hidratada y saludable. Adecuado para todo tipo de piel</p>
+                <span class="precio">$1200.99 </span>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="../assets/image/CremaHidratacionOjos.png" alt="Medicube Age R Booster Ex">
+            <div class="product-txt" onclick="verProducto('Medicube Age R Booster Ex')">
+                <h4>Mixsoon Crema Hidratacion Alrededor Ojos</h4>
+                <p>Para todo tipo de piel </p>
+                <p>Recomendado para mayores de 20 años</p>
+                <span class="precio">$596.86 </span>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="../assets/image/CuidadoCara.png" alt="Medicube Age R Booster Ex">
+            <div class="product-txt" onclick="verProducto('Medicube Age R Booster Ex')">
+                <h4> Beauty of Joseon 3pz</h4>
+                <p>El extracto y los aminoácidos del arroz, ricos en nutrientes, penetran profundamente para hidratar y
+                    suavizar la piel seca y áspera</p>
+                <span class="precio">$110.00 </span>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="../assets/image/KitRodillo.png" alt="Medicube Age R Booster Ex">
+            <div class="product-txt" onclick="verProducto('Medicube Age R Booster Ex')">
+                <h4>Kit Completo Rodillo</h4>
+                <p>Rodillo de Cuarzo Color Rosa </p>
+                <span class="precio">$596.86 </span>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="../assets/image/Mascarilla 4.png" alt="Medicube Age R Booster Ex">
+            <div class="product-txt" onclick="verProducto('Medicube Age R Booster Ex')">
+                <h4>Beauty Of Joseon Centella Asiatica Calming Mask</h4>
+                <p>Para tipo de piel sensible </p>
+                <span class="precio">$139.46 </span>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="../assets/image/Mascarilla 5.png" alt="Medicube Age R Booster Ex">
+            <div class="product-txt" onclick="verProducto('Medicube Age R Booster Ex')">
+                <h4>BIOAQUA Centella Asiatica Hidratante Facial Calmante Reparación Mascarilla Facial 5 pz</h4>
+                <p>Control Aceite Anti-Acné, Refrescante e Hidratante </p>
+                <span class="precio">$196.86 </span>
+            </div>
+        </div>
+
+        <div class="producto" onmouseover="mostrarInformacion(this)" onmouseout="ocultarInformacion(this)">
+            <img src="../assets/image/Mascarilla.png" alt="">
+            <div class="product-txt">
+                <h4>SKIN 1004 - Madagascar Centella Poremizing Clarifying Mask Bundle Set 10pz</h4>
+                <p>Combate problemas como el acné, la hipersensibilidad, los poros dilatados y el enrojecimiento de la
+                    piel </p>
+                <span class="precio">$509.67 </span>
+            </div>
+        </div>
+
+        <div class="producto" onmouseover="mostrarInformacion(this)" onmouseout="ocultarInformacion(this)">
+            <img src="../assets/image/Rodillo.png" alt="">
+            <div class="product-txt">
+                <h4>Rodillo 1pz </h4>
+                <p>Perfecto para dar masajes y relajar la cara </p>
+                <span class="precio">$304.00 </span>
+
+            </div>
+        </div>
+
+        <div class="producto" onmouseover="mostrarInformacion(this)" onmouseout="ocultarInformacion(this)">
+            <img src="../assets/image/MiniKitCara.png" alt="">
+            <div class="product-txt">
+                <h4>Protector solar coreano orgánico de arroz SPF50+ + Serum Brillante y palo solar mate para cara y
+                    cuerpo, todo
+                    tipo de piel
+                </h4>
+                <p>Producto todo en uno que proporciona limpieza de la piel, antioxidante, hidratante, reafirmante,
+                    fregado y cuidado calmante (refrescante) </p>
+                <span class="precio">$985.26 </span>
+
+            </div>
+        </div>
+
+        <div class="producto" onmouseover="mostrarInformacion(this)" onmouseout="ocultarInformacion(this)">
+            <img src="../assets/image/MiniKit1.png" alt="">
+            <div class="product-txt">
+                <h4>Kit Beauty Of Joseon. Tónico + Relief Sun Aqua-Fresh + Protector Solar </h4>
+                <p>Fórmula Vegana, producto ideal para todas las edades y pieles </p>
+                <span class="precio">$596.86 </span>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="src/js/producto.js"></script>
+</body>
+
+</html>

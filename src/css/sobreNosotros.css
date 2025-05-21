@@ -1,0 +1,115 @@
+/* Estilo general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+    color: #333;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: #007bff;
+}
+
+.logo-img {
+    height: 50px;
+}
+
+/* Sección de bienvenida */
+.counta-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+    background-color: #ffc4e861;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.counta-info {
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.counta-info h2 {
+    font-size: 2.5rem;
+    color: #ff0099;
+}
+
+.counta-info p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.counta-info span {
+    color: #ff0099;
+    font-weight: bold;
+}
+
+.counta-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+/* Contenido principal */
+.conta {
+    padding: 4rem 1rem;
+}
+
+.card-title {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.card {
+    border: none;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-text {
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Imagen dentro de las cards */
+.img-fluid {
+    border-radius: 1rem;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .counta-content {
+        flex-direction: column;
+    }
+
+    .counta-info {
+        margin-bottom: 2rem;
+    }
+
+    .counta-img img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}

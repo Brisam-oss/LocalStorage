@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo-img {
+    width: 100px !important;
+    height: auto;
+}
+
+.iconoLinks {
+    width: 250px !important;
+    height: auto;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.bee {
+    padding: 150px 0px;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    background-color: #F2E2B1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-prev::after {
+    font-size: 30px;
+}
+
+.swiper-button-next::after {
+    font-size: 30px;
+}
+
+.swiper-button-next {
+    color: #6e422e;
+}
+
+.swiper-button-prev {
+    color: #6e422e;
+}
+
+.swiper-pagination-bullet {
+    background-color: #AB886D;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #FFECC8;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo img {
+    width: 50px;
+
+}
+
+.container .navbar {
+    display: flex;
+    align-items: center;
+
+}
+
+.container .navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 40px;
+
+}
+
+.container .navbar ul li {
+    list-style: none;
+}
+
+.container .navbar ul li a {
+    position: relative;
+    font-size: 1.1em;
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.container .navbar ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.container .navbar ul li a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.menu .navbar ul li a:hover {
+    color: #f3e5b3;
+
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icon {
+    width: 50px;
+
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    text-align: right;
+    margin-top: 100px
+}
+
+.slider {
+    width: 1100px;
+}
+
+.Enlace {
+    display: inline-block;
+    color: #DEAA79;
+    margin-top: 15px;
+}
+
+.productos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 50px;
+    background-color: white;
+}
+
+.producto {
+    background-color: #ffe5b4b0;
+    /* Naranja claro */
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.producto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+.producto h3 {
+    font-size: 18px;
+    margin: 15px 0 10px;
+    color: #333;
+}
+
+.producto p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}
+
+.precio {
+    color: #A66E38;
+}
+
+.Nosotros {
+    padding: 80px 0px;
+    background-image: linear-gradient(rgb(127, 128, 124, 1), rgba(104, 102, 102, 0.4)), url("https://glowstation.com/wp-content/uploads/MIXSOON-brand-category-at-GlowStation.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Nosotros2 {
+    padding: 450px 0px;
+    background-image: linear-gradient(rgba(127, 128, 124, 0.489), rgba(104, 102, 102, 0)), url("https://blog.delivered.co.kr/wp-content/uploads/2025/03/idol-cosmetics-featured.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    overflow: hidden;
+}
+
+.Nosotros-txt h2 {
+    color: #ffffffe1;
+    font-size: 80px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 100px;
+}
+
+.Nosotros-txt p {
+    color: #f7f7f7cd;
+    font-size: 80px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 100px;
+}
+
+.Nosotros-txt span {
+    color: #754E1A;
+    font-size: 80px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 100px;
+}
+
+.info {
+    text-align: right;
+}
+
+hr {
+    border: 1px solid #F0BB78;
+}
+
+.links {
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.links ul {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.links p {
+    color: #B99470;
+    margin-top: 25px;
+}
+
+.links ul li a {
+    color: rgb(180, 139, 101);
+}
+
+.socials {
+    margin-top: 30px;
+}
+
+.socials img {
+    width: 40px;
+    margin: 0 15px;
+}
+
+button[type="submit"]:hover {
+    background-color: #B99470;
+}
+
+button[type="submit"]:active {
+    background-color: #6e422e;
+}
+
+@media(max-width:991px) {
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #dfb996;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .menu .navbar ul li a {
+        color: #6e422e;
+    }
+
+    .menu .navbar ul li a:hover {
+        color: #fae8d6;
+    }
+
+    #menu:checked~.navbar {
+        display: block;
+    }
+
+    .header-content {
+        padding: 30px;
+        margin-top: 70px;
+    }
+
+    .slider {
+        width: 420px;
+    }
+
+    .Enlace {
+        font-size: 14px;
+        margin-top: 25px;
+    }
+
+    .bee {
+        padding: 50px 30px;
+    }
+
+    .product {
+        text-align: center;
+    }
+
+    .Nosotros {
+        padding: 30px;
+    }
+
+    .Nosotros2 {
+        height: 400px;
+        padding: 1px 0px;
+    }
+
+    .Nosotros-txt h2 {
+        font-size: 50px;
+        line-height: 70px;
+    }
+
+    .Nosotros-txt p {
+        font-size: 50px;
+        line-height: 70px;
+    }
+
+    .Nosotros-txt span {
+        font-size: 50px;
+        line-height: 70px;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .links {
+        padding: 20px 0px;
+    }
+
+    .links ul {
+        flex-direction: column;
+        width: 200px;
+    }
+
+    .links ul li a {
+        display: block;
+        margin-bottom: 15px;
+    }
+}

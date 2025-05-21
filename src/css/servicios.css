@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fffdfe;
+
+}
+
+#container-principal {
+    flex-grow: 1;
+    /* Ocupa el espacio disponible */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+
+}
+
+.logo-img {
+    width: 150px !important;
+    height: auto;
+}
+
+
+.navbar ul li a {
+    position: relative;
+    font-size: 1.1em;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navbar ul li a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.servicio {
+    padding: 80px 5px;
+    background-position: bottom;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.servicio-txt h2 {
+    color: #702b3a;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.2);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.counta {
+    background-color: #d190d3;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.counta-content {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.counta-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.counta-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    min-width: 300px;
+}
+
+.counta-text {
+    font-size: 45px;
+    color: #620b6e;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.counta-text p {
+    font-size: 45px;
+    color: #ffffff;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.counta-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    font-size: 30px;
+    color: #58094d;
+}
+
+.cuadro-izq {
+    background-image: linear-gradient(to right, #e5e0ff, #85a9e5);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    min-height: 400px;
+    text-align: center;
+}
+
+.cuadro-izq h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    background-image: linear-gradient(to right, #1a266b, #3866b4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.cuadro-p {
+    background-image: linear-gradient(to top, #e5e0ff, #85a9e5, #3866b4);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuadro-p img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cuadro-pequeno h3 {
+    color: #1a6b3c !important;
+}
+
+.cuadro-izq p {
+    font-size: 1.2rem;
+    color: #3a3837;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin-left: 55px;
+}
+
+.cuadro-izq .col-md-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuadro-izq img {
+    width: 100%;
+    height: auto;
+    max-width: 90%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.cuadro-der {
+    background: linear-gradient(to top, #e5e0ff, #85a9e5);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.cuadro-pequeno {
+    background: linear-gradient(to top, #ffffff, #d3ffc8);
+    border-radius: 10px;
+    padding: 30px;
+    /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(54, 207, 87, 0.1);
+}
+
+.cuadro-der img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cuadro-pequeno h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 15px;
+}
+
+.cuadro-pequeno p {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+.cuadro-pequeno a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.cuadro-pequeno2 h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff0000;
+    margin-bottom: 15px;
+}
+
+.cuadro-pequeno2 p {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+.cuadro-pequeno2 {
+    background: linear-gradient(to right, #f1c9c9, #fff7f7);
+    border-radius: 10px;
+    padding: 30px;
+    /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.1);
+}
+
+.footer-txt {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-txt img {
+    width: 50px;
+}
+
+.socials {
+    margin-top: 30px;
+}
+
+.socials img {
+    width: 40px;
+    margin: 0 15px;
+}
+
+@media (max-width: 991.98px) {
+
+    /* corresponde al breakpoint lg de Bootstrap */
+    .navbar {
+        background-color: #f77998;
+        /* puedes cambiar el color */
+        transition: background-color 0.3s ease-in-out;
+    }
+}
